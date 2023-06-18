@@ -20,7 +20,7 @@ module.exports = {
         darkMode:{
           primary: '#0D1B1E',
           secondary: '#6761A8',
-          thrid: '#2A2D34'
+          third: '#2A2D34'
         }
       }
     },

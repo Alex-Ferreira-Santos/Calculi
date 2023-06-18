@@ -1,9 +1,13 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { AppProviders } from "@/providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700",  "900"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -21,12 +25,13 @@ export default function RootLayout({
         <title>Calculi</title>
       </head>
       <body
-        className={`${inter.className} relative min-h-screen`}
+        className={`${roboto.className} relative min-h-screen`}
         suppressHydrationWarning={true}
       >
         <AppProviders>
           <Header />
           {children}
+          <Footer />
         </AppProviders>
       </body>
     </html>

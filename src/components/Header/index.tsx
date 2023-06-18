@@ -20,7 +20,7 @@ export function Header() {
   }, [systemTheme]);
 
   return (
-    <header className="w-full dark:bg-darkMode-thrid bg-third p-4 flex justify-between items-center transition-all dark:text-white min-h-[10vh]">
+    <header className="w-full dark:bg-darkMode-third bg-third p-4 flex justify-between items-center transition-all dark:text-white min-h-[10vh]">
       <section
         className={`flex flex-col absolute w-full z-50 bg-third dark:bg-darkMode-primary left-0 p-4 gap-4 !transition-all ${
           openMenu ? "top-0 bottom-0" : "-top-[100vh]"
